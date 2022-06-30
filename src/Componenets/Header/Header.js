@@ -4,7 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import CustomLink from './CustomLink';
-
+import './Header.css'
 const Header = () => {
 
     const [user] = useAuthState(auth);
@@ -44,9 +44,9 @@ const Header = () => {
         <div>
 
             <div id='' className={background ?
-                'nav bg-[black] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
+                'nav bg-[white] bg-opacity-60  backdrop-filter backdrop-blur-sm   text-[white] shadow '
                 :
-                'nav text-[black] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
+                'nav text-[white] bg-opacity-60  backdrop-filter-none backdrop-blur-sm shadow'}>
                 <div class="navbar w-[95%] mx-auto ">
                     <div class="navbar-start">
                         <div class="dropdown">
@@ -60,7 +60,7 @@ const Header = () => {
                         <Link to='/' class="btn btn-ghost normal-case text-xl y">Task App</Link>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal mt-[3%] ">
+                        <ul class="menu menu-horizontal mt-[1%] ">
                             {menuItems}
                         </ul>
                     </div>
