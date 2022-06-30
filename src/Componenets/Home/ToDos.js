@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import SingleTask from './SingleTask';
 
 const ToDos = () => {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
 
-
+const [task, setTask]=useState()
 
 
     const onSubmit = async (data) => {
+
+        setTask(data?.task)
 
     }
 
@@ -29,6 +32,11 @@ const ToDos = () => {
                 <input className='btn text-white bg-[#050535] md:w-auto w-full max-w-xs mt-5 md:mt-0' type="submit" value="Add Task" />
 
             </form>
+
+            <div className='mt-20'>
+                <h1 className='text-center mb-3 text-[white]'>Created Tasks : </h1>
+                <div><SingleTask task ={task}></SingleTask></div>
+            </div>
         </div>
     );
 };
