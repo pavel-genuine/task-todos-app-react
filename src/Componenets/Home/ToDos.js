@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { EditText } from 'react-edit-text';
+
 import { useForm } from "react-hook-form";
 import CompletedTasks from './CompletedTask';
 import SingleTask from './SingleTask';
