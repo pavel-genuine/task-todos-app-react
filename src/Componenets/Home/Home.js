@@ -4,7 +4,7 @@ import ToDos from './ToDos';
 
 const Home = () => {
     return (
-        <div className='bg-neutral h-[100vh] pt-20'>
+        <div className='bg-neutral  pt-20'>
             <ToDos></ToDos>
         </div>
     );
