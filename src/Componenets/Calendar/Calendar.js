@@ -5,11 +5,13 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 const Calendar=()=> {
  
     return (
-     <div className='w-[80%] h-[80vh] mx-auto pt-20'>
+     <div className='bg-neutral '>
+        <div className='w-[80%]  bg-neutral text-[white]  mx-auto py-20'>
          <FullCalendar 
         plugins={[ dayGridPlugin ]}
         initialView="dayGridMonth"
       />
+     </div>
      </div>
     )
   }

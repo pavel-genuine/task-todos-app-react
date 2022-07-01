@@ -7,6 +7,7 @@ import SignUp from './Componenets/Auth/SignUp';
 import SignIn from './Componenets/Auth/SignIn';
 import Calendar from './Componenets/Calendar/Calendar';
 import SingleTask from './Componenets/Home/SingleTask';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Route path='/sign-up' element={<SignUp></SignUp>}></Route>
       <Route path='/sign-in' element={<SignIn></SignIn>}></Route>
      </Routes>
-     
+     <Footer></Footer>
     </div>
   );
 }

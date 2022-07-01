@@ -45,7 +45,7 @@ const ToDos = () => {
     }
 
     return (
-        <div>
+        <div className='py-10 min-h-[60vh]'>
             <form onSubmit={handleSubmit(onSubmit)} className='flex md:flex-row flex-col mx-auto md:w-96 w-80  ' action="">
 
 
